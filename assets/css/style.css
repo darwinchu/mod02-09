@@ -3,12 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Nunito Sans', sans-serif;
+	font-size: 20px;
 
 }
 
-.menu {
-	border: red 1px solid;
-}
 
 body {
 
@@ -20,6 +18,91 @@ body {
 }
 
 
+/*newley added css styles*/
+
+
+
+/*.left-menu {
+	border: 1px red solid;
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+
+.right-menu {
+	border: 1px red solid;
+	width: 50%;
+	float: left;
+	height: 100%;
+
+}
+
+.right-menu-style {
+	padding: 5px;
+}
+
+*/
+
+
+
+#content {
+	padding: 30px;
+	background-color: rgba(231,227,223,.2);
+	text-align: justify;
+    text-justify: inter-word;
+
+}
+
+#video-side {
+	background-color: rgba(51,47,43,.4);
+	padding: 20px;
+}
+
+.border {
+	border: #DEB887 solid 1px;
+	padding: 1px;
+	border-radius: 5%;
+	margin: 10px;
+}
+
+.box {
+	background-color: black;
+	height: 100px;
+	width: 125px;
+	margin: 10px;
+	float:left;
+	border-radius: 10px;
+}
+
+.text-box > h4, .text-box > p {
+	color:white;
+}
+
+.text-box > p {
+	font-size: 10px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-box {
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*newley added css styles end*/
 
 .container {
 	max-width: 1300px;
@@ -33,15 +116,18 @@ body {
 	padding-top: 50px;
 }
 
-.main {
-
-	min-height: 780px;
-	opacity: .5;
-	}
 
 .footer {
-	height: 100px;
+	margin: 0px;
+	background-color: rgba(68,66,77,.5);
+
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
 }
+
 
 .clear:after {
 	content: "";
@@ -58,22 +144,6 @@ body {
 
 }
 
-.logo {
-	width: 10%;
-	border: 1px solid red;
-	float: left;
-}
-a {
-	text-decoration: none;
-	margin: 30px;
-	color: black;
-}
-.main-menu {
-	float:left;
-	border:red 1px red;
-	margin-left:100px;
-	width: 60%;
-}
 
 .grid > .clm {
 	height: 1060px;
@@ -152,12 +222,57 @@ a {
 }
 
 [class*="col"] {
-	/*border: 1px solid black;*/
+	/*border: 5px solid red;*/
 	float: left;
 	box-sizing: border-box;
 }
 
 /*media queries*/
+
+@media screen and (min-width: 900px) {
+	
+.logo {
+	margin-left:25px;
+}
+
+.left-menu {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+
+.right-menu {
+	width: 50%;
+	float: left;
+	height: 100%;
+
+}
+
+.right-menu-style {
+	padding: 5px;
+	display: table;
+}
+
+.horizontal-list {
+	list-style: none;
+	display: inline;
+	margin: 25%;
+}
+
+.horizontal-list > li {
+	display: inline;
+}
+
+.horizontal-list > li > a {
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+}
+
+
+  
+}
 
 /*tablets*/
 @media only screen and (max-width: 768px) {
@@ -206,6 +321,44 @@ a {
 .col-md-12 {
 	width: 100%; /*100 divided by 12 time 12*/
 }
+
+.logo {
+	margin-left:25px;
+}
+
+.left-menu {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+
+.right-menu {
+	float: left;
+	height: 100%;
+
+}
+
+.right-menu-style {
+	padding: 5px;
+	display: table;
+}
+
+.horizontal-list {
+	list-style: none;
+	display: inline;
+}
+
+.horizontal-list > li {
+	display: inline;
+}
+
+.horizontal-list > li > a {
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+}
+
 }
 
 
@@ -255,4 +408,37 @@ a {
 .col-sm-12 {
 	width: 100%; /*100 divided by 12 time 12*/
 }
+
+
+.logo {
+	text-align: center;
+}
+
+.left-menu {
+	height: 100%;
+}
+
+
+.right-menu {
+	height: 100%;
+	text-align: center;
+}
+
+.right-menu-style {
+	padding: 5px;
+	display: table;
+	margin: 0 auto;
+}
+
+.horizontal-list {
+	list-style: none;
+	display: inline;
+}
+
+
+.horizontal-list > li > a {
+	color: black;
+	text-decoration: none;
+}
+
 }
