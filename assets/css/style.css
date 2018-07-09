@@ -57,6 +57,7 @@ body {
 #video-side {
 	background-color: rgba(51,47,43,.4);
 	padding: 20px;
+	height: 100%;
 }
 
 .border {
@@ -117,16 +118,7 @@ body {
 }
 
 
-.footer {
-	margin: 0px;
-	background-color: rgba(68,66,77,.5);
 
-	position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    margin: 0 auto;
-}
 
 
 .clear:after {
@@ -230,6 +222,17 @@ body {
 /*media queries*/
 
 @media screen and (min-width: 900px) {
+
+	.footer {
+	margin: 0px;
+	background-color: rgba(68,66,77,.5);
+
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
 	
 .logo {
 	margin-left:25px;
@@ -359,6 +362,16 @@ body {
 	padding: 15px;
 }
 
+.footer {
+	margin: 0px;
+	background-color: rgba(68,66,77,.5);
+
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
 }
 
 
@@ -439,6 +452,16 @@ body {
 .horizontal-list > li > a {
 	color: black;
 	text-decoration: none;
+}
+
+.footer {
+	margin: 0px;
+	background-color: rgba(68,66,77,.5);
+
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
 }
 
 }
