@@ -46,7 +46,13 @@ body {
 
 
 
+#content {
+	padding: 30px;
+	background-color: rgba(231,227,223,.2);
+	text-align: justify;
+    text-justify: inter-word;
 
+}
 
 #video-side {
 	background-color: rgba(51,47,43,.4);
@@ -104,7 +110,12 @@ body {
 	margin: auto;
 }
 
-
+.header {
+	min-height: 150px;
+	background-color: #e5d7c5;
+	opacity: .5;
+	padding-top: 50px;
+}
 
 
 
@@ -144,7 +155,7 @@ body {
 	top: -960px; /*whole height of the content area*/
 }
 
-/*desktop default*/
+/*desktop defaul*/
 
 .col-lg-1 {
 	width: 8.33%; /*100 diveded by 12*/
@@ -208,29 +219,11 @@ body {
 	box-sizing: border-box;
 }
 
-
 /*media queries*/
-/*desktop*/
-@media only screen and (min-width: 961px) {
 
-.header {
-	min-height: 150px;
-	background-color: #e5d7c5;
-	opacity: .5;
-	padding-top: 50px;
-}
+@media screen and (min-width: 900px) {
 
-
-#content {
-	margin-left: 50px;
-	padding: 30px;
-	background-color: rgba(231,227,223,.2);
-	text-align: justify;
-    text-justify: inter-word;
-
-}
-
-.footer {
+	.footer {
 	margin: 0px;
 	background-color: rgba(68,66,77,.5);
 
@@ -267,6 +260,7 @@ body {
 .horizontal-list {
 	list-style: none;
 	display: inline;
+	margin: 25%;
 }
 
 .horizontal-list > li {
@@ -284,21 +278,7 @@ body {
 }
 
 /*tablets*/
-@media only screen and (min-width: 416px) and (max-width: 960px) {
-	#content {
-	padding: 30px;
-	background-color: rgba(231,227,223,.2);
-	text-align: justify;
-    text-justify: inter-word;
-
-}
-
-.header {
-	min-height: 150px;
-	background-color: #e5d7c5;
-	opacity: .5;
-	padding-top: 50px;
-}
+@media only screen and (max-width: 768px) {
 
 .col-md-1 {
 		width: 8.33%;
@@ -346,7 +326,7 @@ body {
 }
 
 .logo {
-	margin-left:20px;
+	margin-left:25px;
 }
 
 .left-menu {
@@ -396,22 +376,7 @@ body {
 
 
 /*mobile*/
-
-@media only screen and (max-width: 415px){
-
-.header {
-	min-height: 150px;
-	background-color: #e5d7c5;
-	opacity: .5;
-}
-
-#content {
-	padding: 30px;
-	background-color: rgba(231,227,223,.2);
-	text-align: justify;
-    text-justify: inter-word;
-
-}
+@media only screen and (max-width: 450px){
 .col-sm-1 {
 		width: 8.33%;
 }
@@ -460,12 +425,6 @@ body {
 
 .logo {
 	text-align: center;
-	border: black 1px solid;
-
-}
-
-.logo > h1 {
-	font-size: 25px;
 }
 
 .left-menu {
@@ -476,12 +435,12 @@ body {
 .right-menu {
 	height: 100%;
 	text-align: center;
-
 }
 
 .right-menu-style {
+	padding: 5px;
 	display: table;
-	width: 100%;
+	margin: 0 auto;
 }
 
 .horizontal-list {
@@ -493,16 +452,7 @@ body {
 .horizontal-list > li > a {
 	color: black;
 	text-decoration: none;
-	}
-
-.horizontal-list > li {
-	color: black;
-	text-decoration: none;
-	border:  black solid 1px;
-	margin-top: 5px;
-
 }
-
 
 .footer {
 	margin: 0px;
